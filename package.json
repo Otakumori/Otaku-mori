@@ -6,19 +6,19 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-scripts": "4.0.3",
-    "web-vitals": "^2.1.4",
-    "gh-pages": "^5.0.0"  // Add gh-pages for deployment
+    "gh-pages": "^5.0.0",  // For deployment
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",  // Ensures the app is built before deployment
-    "deploy": "gh-pages -d build"  // Deploys the build folder to gh-pages
+    "build": "react-scripts build",  // Build command for React
+    "predeploy": "npm run build",  // Run build before deploying
+    "deploy": "gh-pages -d build"  // Deploy to GitHub Pages
   },
-  "homepage": "https://www.otaku-mori.com",  // Custom domain URL
+  "homepage": "https://www.otaku-mori.com",
   "eslintConfig": {
     "extends": [
       "react-app",
