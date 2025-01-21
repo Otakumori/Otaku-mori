@@ -6,7 +6,7 @@
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-scripts": "4.0.3",
-    "gh-pages": "^5.0.0",  // For deployment
+    "gh-pages": "^5.0.0",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
@@ -14,9 +14,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",  // Build command for React
-    "predeploy": "npm run build",  // Run build before deploying
-    "deploy": "gh-pages -d build"  // Deploy to GitHub Pages
+    "build": "react-scripts build",  // Ensure this is present
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "homepage": "https://www.otaku-mori.com",
   "eslintConfig": {
@@ -38,3 +38,4 @@
     ]
   }
 }
+
