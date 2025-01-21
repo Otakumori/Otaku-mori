@@ -1,13 +1,7 @@
 {
-  "name": "otaku-mori-backend",
+  "name": "otakumori",
   "version": "1.0.0",
-  "description": "Enhanced Backend for Otaku-mori e-commerce website",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "start": "echo 'No build step required' && exit 0"
   }
 }
