@@ -1,19 +1,17 @@
-// firebaseConfig.js
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+// firebase-config.js
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBP01Hi8tBNcZzl4MAPPLGA5zUaSRNNI-4",
-  authDomain: "otaku-mori.firebaseapp.com",
-  projectId: "otaku-mori",
-  storageBucket: "otaku-mori.firebasestorage.app",
-  messagingSenderId: "579739041870",
-  appId: "1:579739041870:web:cc91201750f5b240e3831f",
-  measurementId: "G-GEKT6PWNXL"
+  apiKey: "AIzaSyBP...",
+  authDomain: "your-project.firebaseapp.com",
+  projectId: "your-project",
+  storageBucket: "your-project.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abcdef",
+  measurementId: "G-XYZ1234"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
-export default app;
+const analytics = getAnalytics(app);
+export { app, analytics };
