@@ -3,59 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otaku-mori</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        body { font-family: 'Roboto', sans-serif; }
-        .sakura-hover:hover { background-image: url('https://source.unsplash.com/300x300/?sakura'); }
-    </style>
+    <title>Otakumori</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body class="bg-gray-100 font-sans">
-    <header class="bg-indigo-600 text-white py-4 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold">Otaku-mori</h1>
-            <nav class="flex">
-                <a href="#" class="text-white px-4 hover:underline">Home</a>
-                <a href="#catalog" class="text-white px-4 hover:underline">Catalog</a>
-                <a href="#cart" class="text-white px-4 hover:underline">Cart</a>
-                <a href="#login" class="text-white px-4 hover:underline">Login</a>
-            </nav>
-        </div>
+<body>
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="container mx-auto py-8">
-        <!-- Hero Section -->
-        <section class="text-center bg-cover bg-center py-16 rounded-lg mb-8" style="background-image: url('https://source.unsplash.com/1600x400/?anime');">
-            <h2 class="text-4xl text-white font-bold">Welcome to Otaku-mori</h2>
-            <p class="text-lg text-white mt-2">Your one-stop shop for anime and manga merchandise!</p>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome, Senpai!</h1>
+            <p>Discover your passion at Otakumori.</p>
         </section>
-        <!-- Catalog Section -->
-        <section id="catalog" class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            <div class="bg-white p-4 rounded shadow sakura-hover">
-                <img src="https://source.unsplash.com/300x300/?anime" alt="Product" class="rounded mb-4">
-                <h3 class="text-xl font-bold">Anime Figure</h3>
-                <p class="text-gray-600">$29.99</p>
-                <button class="bg-indigo-600 text-white px-4 py-2 mt-2 rounded">Add to Cart</button>
-            </div>
-            <div class="bg-white p-4 rounded shadow sakura-hover">
-                <img src="https://source.unsplash.com/300x300/?manga" alt="Product" class="rounded mb-4">
-                <h3 class="text-xl font-bold">Manga Volume</h3>
-                <p class="text-gray-600">$14.99</p>
-                <button class="bg-indigo-600 text-white px-4 py-2 mt-2 rounded">Add to Cart</button>
-            </div>
-            <div class="bg-white p-4 rounded shadow sakura-hover">
-                <img src="https://source.unsplash.com/300x300/?animeposter" alt="Product" class="rounded mb-4">
-                <h3 class="text-xl font-bold">Anime Poster</h3>
-                <p class="text-gray-600">$9.99</p>
-                <button class="bg-indigo-600 text-white px-4 py-2 mt-2 rounded">Add to Cart</button>
-            </div>
+
+        <section id="shop">
+            <h2>Shop Categories</h2>
+            <ul>
+                <li><a href="#apparel">Suit Up, Senpai</a></li>
+                <li><a href="#accessories">Styling Up</a></li>
+                <li><a href="#home-decor">Lore Decor</a></li>
+                <li><a href="#limited-edition">Limited Edition</a></li>
+            </ul>
         </section>
     </main>
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto text-center">
-            &copy; 2024 Otaku-mori. All rights reserved. <br>
-            Earn XP for every purchase and unlock exclusive badges!
-        </div>
+
+    <footer>
+        <p>© 2025 Otakumori. All rights reserved.</p>
     </footer>
 </body>
 </html>
