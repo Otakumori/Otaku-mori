@@ -1,6 +1,40 @@
-"scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+{
+  "name": "otakumori-dynamic",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^2.1.4",
+    "gh-pages": "^5.0.0"  // Add gh-pages for deployment
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.14.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",  // Ensures the app is built before deployment
+    "deploy": "gh-pages -d build"  // Deploys the build folder to gh-pages
+  },
+  "homepage": "https://www.otaku-mori.com",  // Custom domain URL
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
