@@ -1,0 +1,16 @@
+# Ignore environment variables
+.env
+
+# Ignore node_modules (dependencies installed via npm)
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Vercel/Netlify deploy folders
+.vercel/
+.netlify/
