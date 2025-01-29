@@ -21,6 +21,11 @@
     </header>
 
     <main>
+        <!-- Hidden Teaser Message -->
+        <p style="text-align: center; font-size: 18px; font-weight: bold; color: #ff66b2;">
+            A whisper among the petals... but only for those who dare to listen.
+        </p>
+
         <section id="hero">
             <h1>Welcome, Senpai!</h1>
             <p>Discover your passion at Otakumori.</p>
@@ -35,10 +40,26 @@
                 <li><a href="#limited-edition">Limited Edition</a></li>
             </ul>
         </section>
+
+        <!-- Interactive Hidden Surprise -->
+        <div id="secret-message" style="display: none; text-align: center; margin-top: 20px; font-size: 20px; color: #ff0066;">
+            <p>You found me, Senpai... But can you unlock the next secret?</p>
+        </div>
+
+        <button id="reveal-btn" style="display: block; margin: 20px auto; padding: 10px 20px; font-size: 16px; background-color: #ff66b2; color: white; border: none; cursor: pointer; border-radius: 5px;">
+            Whisper to the Petals
+        </button>
     </main>
 
     <footer>
         <p>© 2025 Otakumori. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById("reveal-btn").addEventListener("click", function() {
+            document.getElementById("secret-message").style.display = "block";
+            this.style.display = "none";
+        });
+    </script>
 </body>
 </html>
